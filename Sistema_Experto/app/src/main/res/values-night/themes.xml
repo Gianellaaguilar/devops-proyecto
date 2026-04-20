@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Tema Médico Oscuro Teal -->
+    <style name="Base.Theme.Sistema_Experto" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color Primario - Teal más claro en modo oscuro -->
+        <item name="colorPrimary">#40E0D0</item>
+        <item name="colorPrimaryVariant">#20B2AA</item>
+        <item name="colorOnPrimary">#003333</item>
+        
+        <!-- Color Secundario - Turquesa -->
+        <item name="colorSecondary">#7FFFD4</item>
+        <item name="colorSecondaryVariant">#40E0D0</item>
+        <item name="colorOnSecondary">#003333</item>
+        
+        <!-- Color Terciario - Coral -->
+        <item name="colorTertiary">#FF8A8A</item>
+        <item name="colorOnTertiary">#1A1A1A</item>
+        
+        <!-- Colores de Fondo Oscuro -->
+        <item name="android:colorBackground">#0A1F1F</item>
+        <item name="colorSurface">#142828</item>
+        <item name="colorOnSurface">#E0F7F6</item>
+        <item name="colorSurfaceVariant">#1A3333</item>
+        <item name="colorOnSurfaceVariant">#A0C4C4</item>
+        
+        <!-- Colores de Error -->
+        <item name="colorError">#FF6B6B</item>
+        <item name="colorOnError">#FFFFFF</item>
+        
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">#0A1F1F</item>
+        <item name="android:navigationBarColor">#142828</item>
+    </style>
+</resources>

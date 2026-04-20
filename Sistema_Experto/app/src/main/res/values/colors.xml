@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- ============================================ -->
+    <!-- PALETA DE COLORES MÉDICA - ESTILO MODERNO TEAL -->
+    <!-- ============================================ -->
+    
+    <!-- Color Primario - Teal Médico Profesional -->
+    <color name="medical_primary">#008B8B</color>
+    <color name="medical_primary_dark">#006666</color>
+    <color name="medical_primary_light">#20B2AA</color>
+    <color name="medical_primary_lighter">#7FDBDA</color>
+    <color name="medical_primary_lightest">#E0F7F6</color>
+    
+    <!-- Color Secundario - Turquesa Claro -->
+    <color name="medical_secondary">#40E0D0</color>
+    <color name="medical_secondary_dark">#00CED1</color>
+    <color name="medical_secondary_light">#7FFFD4</color>
+    <color name="medical_secondary_lighter">#AFEEEE</color>
+    
+    <!-- Color Terciario - Coral/Rosa (Acento) -->
+    <color name="medical_tertiary">#FF6B6B</color>
+    <color name="medical_tertiary_dark">#EE5A5A</color>
+    <color name="medical_tertiary_light">#FF8A8A</color>
+    <color name="medical_accent_coral">#FF7F7F</color>
+    <color name="medical_accent_yellow">#FFD93D</color>
+    
+    <!-- Colores de Estado -->
+    <color name="medical_success">#2ECC71</color>
+    <color name="medical_warning">#F39C12</color>
+    <color name="medical_error">#E74C3C</color>
+    <color name="medical_info">#3498DB</color>
+    
+    <!-- Colores de Fondo -->
+    <color name="medical_background">#F0FFFE</color>
+    <color name="medical_surface">#FFFFFF</color>
+    <color name="medical_surface_variant">#E0F7F6</color>
+    <color name="medical_surface_light">#F8FFFF</color>
+    
+    <!-- Colores de Texto -->
+    <color name="medical_text_primary">#1A3C40</color>
+    <color name="medical_text_secondary">#5A7A7D</color>
+    <color name="medical_text_tertiary">#8FAAAD</color>
+    <color name="medical_text_hint">#B0C4C6</color>
+    <color name="medical_text_white">#FFFFFF</color>
+    
+    <!-- Colores para Cards -->
+    <color name="medical_card_background">#FFFFFF</color>
+    <color name="medical_card_elevated">#FAFFFE</color>
+    <color name="medical_card_highlight">#E0F7F6</color>
+    <color name="medical_card_selected">#D0F0EE</color>
+    
+    <!-- Colores para Resultados -->
+    <color name="medical_result_primary">#008B8B</color>
+    <color name="medical_result_background">#E0F7F6</color>
+    <color name="medical_warning_background">#FFF3E0</color>
+    <color name="medical_warning_text">#E65100</color>
+    
+    <!-- Gradientes (para uso en código si es necesario) -->
+    <color name="medical_gradient_start">#008B8B</color>
+    <color name="medical_gradient_middle">#20B2AA</color>
+    <color name="medical_gradient_end">#40E0D0</color>
+    
+    <!-- Colores para Header/Toolbar -->
+    <color name="medical_header_background">#008B8B</color>
+    <color name="medical_header_text">#FFFFFF</color>
+    
+    <!-- Material Design 3 compatible colors -->
+    <color name="md_background">#F0FFFE</color>
+    <color name="md_on_background">#1A3C40</color>
+    <color name="md_surface">#FFFFFF</color>
+    <color name="md_on_surface">#1A3C40</color>
+    <color name="md_surface_variant">#E0F7F6</color>
+    <color name="md_on_surface_variant">#5A7A7D</color>
+    
+    <!-- Colores por Categoría -->
+    <color name="category_respiratorio">#40E0D0</color>
+    <color name="category_gastrointestinal">#2ECC71</color>
+    <color name="category_dermatologico">#FF7F7F</color>
+    <color name="category_neurologico">#9B59B6</color>
+    <color name="category_musculoesqueletico">#FF6B6B</color>
+    <color name="category_general">#008B8B</color>
+    
+    <!-- Colores para íconos circulares -->
+    <color name="icon_bg_teal">#E0F7F6</color>
+    <color name="icon_bg_coral">#FFE5E5</color>
+    <color name="icon_bg_yellow">#FFF5CC</color>
+    <color name="icon_bg_purple">#F0E6FF</color>
+    
+</resources>

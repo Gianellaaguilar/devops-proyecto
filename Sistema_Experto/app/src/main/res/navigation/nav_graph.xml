@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.sistema_experto.ui.fragments.SplashFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_expertosFragment"
+            app:destination="@id/expertosFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/expertosFragment"
+        android:name="com.example.sistema_experto.ui.fragments.ExpertosFragment"
+        android:label="Expertos"
+        tools:layout="@layout/fragment_expertos">
+
+        <action
+            android:id="@+id/action_expertosFragment_to_categoriaFragment"
+            app:destination="@id/categoriaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoriaFragment"
+        android:name="com.example.sistema_experto.ui.fragments.CategoriaFragment"
+        android:label="Categorías"
+        tools:layout="@layout/fragment_categoria">
+
+        <action
+            android:id="@+id/action_categoriaFragment_to_subcategoriaFragment"
+            app:destination="@id/subcategoriaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/subcategoriaFragment"
+        android:name="com.example.sistema_experto.ui.fragments.SubcategoriaFragment"
+        android:label="Subcategorías"
+        tools:layout="@layout/fragment_subcategoria">
+
+        <action
+            android:id="@+id/action_subcategoriaFragment_to_sintomaFragment"
+            app:destination="@id/sintomaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sintomaFragment"
+        android:name="com.example.sistema_experto.ui.fragments.SintomaFragment"
+        android:label="Síntomas"
+        tools:layout="@layout/fragment_sintoma">
+
+        <action
+            android:id="@+id/action_sintomaFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.example.sistema_experto.ui.fragments.ResultadoFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_resultado">
+
+        <action
+            android:id="@+id/action_resultadoFragment_to_categoriaFragment"
+            app:destination="@id/categoriaFragment"
+            app:popUpTo="@id/categoriaFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

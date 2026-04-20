@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_pattern">
+
+    <!-- Card principal con elevación -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp">
+
+            <!-- Icono médico grande con fondo circular teal -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardIcono"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/medical_primary_lightest"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/textIcono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="🏥"
+                    android:textSize="56sp"
+                    android:gravity="center" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Título principal -->
+            <TextView
+                android:id="@+id/textTituloBienvenida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/medical_primary"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:letterSpacing="0.02"
+                app:layout_constraintTop_toBottomOf="@+id/cardIcono"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/textSubtituloBienvenida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sistema Experto de Diagnóstico de Enfermedades Básicas"
+                android:textSize="15sp"
+                android:textColor="@color/medical_text_secondary"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/textTituloBienvenida"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Contenedor para el círculo de progreso -->
+            <FrameLayout
+                android:id="@+id/frameProgress"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/textSubtituloBienvenida"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Fondo del círculo de progreso -->
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/progress_circular_background" />
+
+                <!-- ProgressBar circular -->
+                <ProgressBar
+                    android:id="@+id/progressBarCircular"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_circular"
+                    style="@android:style/Widget.ProgressBar.Horizontal" />
+
+                <!-- Porcentaje de carga -->
+                <TextView
+                    android:id="@+id/textPorcentaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/medical_primary"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <!-- Texto de estado de carga -->
+            <TextView
+                android:id="@+id/textCargando"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Inicializando sistema..."
+                android:textSize="14sp"
+                android:textColor="@color/medical_text_tertiary"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/frameProgress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Barra de progreso lineal -->
+            <ProgressBar
+                android:id="@+id/progressBarLineal"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="16dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/medical_primary"
+                android:progressBackgroundTint="@color/medical_primary_lightest"
+                style="?android:attr/progressBarStyleHorizontal"
+                app:layout_constraintTop_toBottomOf="@+id/textCargando"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Texto de versión -->
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versión 1.0"
+        android:textSize="12sp"
+        android:textColor="@color/medical_text_white"
+        android:alpha="0.8"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

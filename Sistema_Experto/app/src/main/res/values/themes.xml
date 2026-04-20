@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Tema Médico Moderno Teal -->
+    <style name="Base.Theme.Sistema_Experto" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color Primario - Teal -->
+        <item name="colorPrimary">@color/medical_primary</item>
+        <item name="colorPrimaryVariant">@color/medical_primary_dark</item>
+        <item name="colorOnPrimary">@color/medical_text_white</item>
+        
+        <!-- Color Secundario - Turquesa -->
+        <item name="colorSecondary">@color/medical_secondary</item>
+        <item name="colorSecondaryVariant">@color/medical_secondary_dark</item>
+        <item name="colorOnSecondary">@color/medical_text_white</item>
+        
+        <!-- Color Terciario - Coral -->
+        <item name="colorTertiary">@color/medical_tertiary</item>
+        <item name="colorOnTertiary">@color/medical_text_white</item>
+        
+        <!-- Colores de Fondo -->
+        <item name="android:colorBackground">@color/medical_background</item>
+        <item name="colorSurface">@color/medical_surface</item>
+        <item name="colorOnSurface">@color/medical_text_primary</item>
+        <item name="colorSurfaceVariant">@color/medical_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/medical_text_secondary</item>
+        
+        <!-- Colores de Error -->
+        <item name="colorError">@color/medical_error</item>
+        <item name="colorOnError">@color/medical_text_white</item>
+        
+        <!-- Tipografía -->
+        <item name="android:textColorPrimary">@color/medical_text_primary</item>
+        <item name="android:textColorSecondary">@color/medical_text_secondary</item>
+        <item name="android:textColorTertiary">@color/medical_text_tertiary</item>
+        
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/medical_primary_dark</item>
+        <item name="android:navigationBarColor">@color/medical_surface</item>
+        
+        <!-- Botones estilo redondeado -->
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.Outlined</item>
+        
+        <!-- Cards estilo moderno -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+    </style>
+
+    <style name="Theme.Sistema_Experto" parent="Base.Theme.Sistema_Experto" />
+    
+    <!-- Estilo de Botón Primario -->
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="backgroundTint">@color/medical_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Estilo de Botón Outline -->
+    <style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="strokeColor">@color/medical_primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/medical_primary</item>
+    </style>
+    
+    <!-- Estilo de Card Moderno -->
+    <style name="Widget.App.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/medical_card_background</item>
+    </style>
+    
+    <!-- Estilo de Card Destacada -->
+    <style name="Widget.App.CardView.Highlighted" parent="Widget.App.CardView">
+        <item name="cardBackgroundColor">@color/medical_card_highlight</item>
+        <item name="strokeColor">@color/medical_primary_lighter</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+    
+</resources>
